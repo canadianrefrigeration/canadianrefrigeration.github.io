@@ -6,12 +6,12 @@
 }
 
 body {
-    min-width: 300px;
+    min-width: 320px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     body {
         padding-left: 5px;
         padding-right: 5px;
@@ -19,14 +19,22 @@ body {
 }
 
 .companyName {
-    font-size: xx-large;
+    text-align: center;
+    background-color: #74baff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.companyNameText {
+    font-size: 2.5em;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .navigationBar {
-    background-color: #333;
+    background-color: #666;
     color: #fff;
     padding: 10px;
 }
