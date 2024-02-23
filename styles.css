@@ -1,0 +1,57 @@
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    min-width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.companyName {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navigationBar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navigationBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar ul li {
+    display: inline;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.navigationBar ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigationBar ul li a:hover {
+    text-decoration: underline;
+    color: lightgreen;
+}
