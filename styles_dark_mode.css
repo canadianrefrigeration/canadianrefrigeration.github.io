@@ -1,0 +1,79 @@
+.unselectable.dark-mode {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body.dark-mode {
+    min-width: 320px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 480px) {
+    body.dark-mode {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+section.dark-mode {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media (max-width: 960px) {
+    section.dark-mode {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.companyName.dark-mode {
+    text-align: center;
+    background-color: #74baff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.companyNameText.dark-mode {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navigationBar.dark-mode {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+}
+
+.navigationBar.dark-mode ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar.dark-mode ul li {
+    display: inline;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.navigationBar.dark-mode ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigationBar.dark-mode ul li a:hover {
+    text-decoration: underline;
+    color: #74baff;
+}

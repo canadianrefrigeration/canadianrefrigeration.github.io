@@ -7,7 +7,7 @@
     <meta name="description"
         content="Canadian Refrigeration & Air Conditioning Ltd provides top-notch HVAC services in Canada. Contact us for installation, repair, and maintenance of refrigeration and air conditioning systems. Serving since 1979.">
     <meta name="keywords"
-        content="Canadian Refrigeration & Air Conditioning Ltd, HVAC, refrigeration, air conditioning, installation, repair, maintenance, Canada, Vancouver, Burnaby, Richmond, Coquitlam, ">
+        content="Canadian Refrigeration & Air Conditioning Ltd, HVAC, refrigeration, air conditioning, installation, repair, maintenance, Canada, Vancouver, Burnaby, Richmond, Coquitlam, Surrey, HVAC services, refrigeration services, air conditioning services, installation services, repair services, maintenance services">
     <meta name="author" content="Naren Jubbal">
     <title>Canadian Refrigeration & Air Conditioning Ltd</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -30,6 +30,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_dark_mode.css">
+    <script>
+        function toggleMode() {
+            const body = document.querySelector('body');
+            body.classList.toggle('dark-mode'); // Toggle the dark-mode class on and off
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('mode', 'dark'); // Save the mode to local storage if it's in dark mode
+            } else {
+                localStorage.setItem('mode', 'white'); // Save the mode to local storage if it's in white mode
+            }
+        }
+
+        // Check local storage for saved mode
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode === 'dark') {
+            document.querySelector('body').classList.add('dark-mode'); // If saved mode is dark, add the dark-mode class
+        }
+    </script>
 </head>
 
 <body>
@@ -118,14 +136,14 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <div>
-            <p><strong>Contact Person:</strong></p>
+            <p><strong>Contact Person</strong></p>
             <p>Jason Yeung<br>Office Administrator, System Architect and Technical Support Specialist<br>Canadian
                 Refrigeration & Air Conditioning Ltd.<br>Unit A3 - 5279 Still Creek Avenue, Burnaby B.C., Canada, V5C
                 5V1<br>+1 (604) 291-2720 | <a
                     href="mailto:canadianrefrigeration@telus.net">canadianrefrigeration@telus.net</a></p>
         </div>
         <div>
-            <p><strong>For more inquiries, quotes, or assistance, reach out to us:</strong></p>
+            <p><strong>Contact Methods</strong></p>
             <ul>
                 <li>Phone: <a href="tel:+16042912720">604-291-2720</a></li>
                 <li>Email: <a href="mailto:canadianrefrigeration@telus.net">canadianrefrigeration@telus.net</a></li>
