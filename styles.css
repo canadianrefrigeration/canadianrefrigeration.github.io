@@ -6,6 +6,8 @@
 }
 
 body.white-mode {
+    background-color: #fff;
+    color: #000;
     min-width: 320px;
     padding-left: 50px;
     padding-right: 50px;
