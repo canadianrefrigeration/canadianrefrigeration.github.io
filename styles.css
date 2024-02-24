@@ -39,6 +39,7 @@ body.dark-mode {
     all: unset;
     display: flex;
     align-items: center;
+    padding: 5px;
 }
 
 section {
