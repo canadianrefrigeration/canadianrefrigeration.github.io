@@ -35,17 +35,11 @@
         function toggleMode() {
             const body = document.querySelector('body');
             body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('mode', 'dark');
-            } else {
-                localStorage.setItem('mode', 'white');
-            }
+            if (body.classList.contains('dark-mode')) localStorage.setItem('mode', 'dark');
+            else localStorage.setItem('mode', 'white');
         }
-
         const savedMode = localStorage.getItem('mode');
-        if (savedMode === 'dark') {
-            document.querySelector('body').classList.add('dark-mode');
-        }
+        if (savedMode === 'dark') document.querySelector('body').classList.add('dark-mode');
     </script>
 </head>
 
@@ -65,7 +59,7 @@
             <li><a href="#request">Service Request</a></li>
         </ul>
     </div>
-    <div><button id="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button></div>
+    <div><button class="darkModeIcon" id="toggle-btn" onclick="toggleMode()">🌙 Dark Mode</button></div>
     <section id="about">
         <h2>About Us</h2>
         <p>Established in August 1979, Canadian Refrigeration and Air Conditioning Ltd. is dedicated to providing

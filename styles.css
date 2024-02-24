@@ -35,6 +35,12 @@ body.dark-mode {
     }
 }
 
+.darkModeIcon {
+    all: unset;
+    display: flex;
+    align-items: center;
+}
+
 section {
     padding-left: 25px;
     padding-right: 25px;
