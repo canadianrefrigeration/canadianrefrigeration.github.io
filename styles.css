@@ -5,31 +5,29 @@
     -ms-user-select: none;
 }
 
-body.white-mode {
-    background-color: #fff;
-    color: #000;
+body {
     min-width: 320px;
     padding-left: 50px;
     padding-right: 50px;
+    font-family: Arial, sans-serif;
 }
 
-@media (max-width: 480px) {
-    body.white-mode {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+body.white-mode {
+    background-color: #fff;
+    color: #000;
 }
 
 body.dark-mode {
     background-color: #272727;
     color: #fff;
-    min-width: 320px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 @media (max-width: 480px) {
     body.dark-mode {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    body.white-mode {
         padding-left: 5px;
         padding-right: 5px;
     }
