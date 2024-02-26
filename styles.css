@@ -40,7 +40,7 @@ section {
 }
 
 .link-remaster:link {
-    color: #ff4f4f;
+    color: #ff0000;
 }
 
 .link-remaster:visited {
@@ -48,18 +48,16 @@ section {
 }
 
 .link-remaster:focus {
-    border-bottom: 1px solid;
-    background: #e49898;
+    background: #ffbbbb;
 }
 
 .link-remaster:hover {
-    border-bottom: 1px solid;
-    background: #feaaaa;
+    background: #ffc5c5;
 }
 
 .link-remaster:active {
-    background: #530101;
-    color: #feaaaa;
+    background: #b00000;
+    color: #ffc5c5;
 }
 
 
