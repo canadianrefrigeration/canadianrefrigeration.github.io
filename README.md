@@ -30,7 +30,10 @@ The company's provision of liability insurance and coverage under Work Safe BC i
 
 ## Contact Us
 
-This section provides contact details for reaching out to the company, including the office address, phone number, email address, and a link to their Facebook Marketplace page. Additionally, a Google Maps embed allows users to locate the company's office.
+* Office Phone: [604-291-2720](https://file+.vscode-resource.vscode-cdn.net/f%3A/Scripts/canadianrefrigeration.github.io/tel:+16042912720 "https://file%2B.vscode-resource.vscode-cdn.net/f%3A/Scripts/canadianrefrigeration.github.io/tel:+16042912720")
+* Email: [canadianrefrigeration@telus.net](https://file+.vscode-resource.vscode-cdn.net/f%3A/Scripts/canadianrefrigeration.github.io/mailto:canadianrefrigeration@telus.net "https://file%2B.vscode-resource.vscode-cdn.net/f%3A/Scripts/canadianrefrigeration.github.io/mailto:canadianrefrigeration@telus.net")
+* Address: Unit A3 - 5279 Still Creek Avenue, Burnaby, British Columbia, Canada
+* Our Facebook Marketplace: [Here](https://www.facebook.com/marketplace/profile/100080081574667/?ref=share_attachment "https://www.facebook.com/marketplace/profile/100080081574667/?ref=share_attachment")
 
 ## Service Request
 
