@@ -69,24 +69,33 @@ section {
 }
 
 .darkModeIcon {
-    all: unset;
+    border: none;
+    background-color: transparent;
+    color: #ff0000;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     user-select: none !important;
     -moz-user-select: none !important;
     -webkit-user-select: none !important;
     -ms-user-select: none !important;
 }
 
+.darkModeIcon::before {
+    content: '\1F318';
+}
+
 .companyName {
+    background: linear-gradient(to right, red 30%, white 33% 66%, red 70%);
     text-align: center;
-    background-color: #74baff;
     color: #fff;
     padding: 20px 0;
 }
 
 .companyNameText {
+    position: relative;
+    padding: 10px;
     font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
@@ -94,10 +103,22 @@ section {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.companyNameText::before {
+    content: '\1F341';
+    font-size: 1.5em;
+    transform: translate(-50%, -50%);
+}
+
 .navigationBar {
-    background-color: #666;
+    background: linear-gradient(to right, #bbb, #666);
     color: #fff;
     padding: 10px;
+    animation: gradientAnimation 3s linear infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 100%; }
+    100% { background-position: 100% 0%; }
 }
 
 .navigationBar ul {
