@@ -32,16 +32,29 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_dark_mode.css">
     <script>
-        function toggleMode() {
+          // Function to toggle dark mode
+          function toggleMode() {
             const body = document.querySelector('body');
             body.classList.toggle('dark-mode');
+            // Saving user's preference in localStorage
             if (body.classList.contains('dark-mode')) localStorage.setItem('mode', 'dark');
             else localStorage.setItem('mode', 'white');
         }
-        const savedMode = localStorage.getItem('mode');
-        if (savedMode === 'dark') {
-            document.querySelector('body').classList.add('dark-mode');
+
+        // Check client browser's dark mode settings and set the page accordingly
+        function checkDarkModePreference() {
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            const savedMode = localStorage.getItem('mode');
+            const body = document.querySelector('body');
+
+            // If client prefers dark mode or if user previously chose dark mode
+            if (prefersDarkScheme.matches || savedMode === 'dark') {
+                body.classList.add('dark-mode');
+            }
         }
+
+        // Call the function when the document is loaded
+        document.addEventListener('DOMContentLoaded', checkDarkModePreference);
     </script>
 </head>
 
