@@ -222,7 +222,7 @@ section {
 
 .operation-table {
     border-collapse: collapse;
-    width: 100%;
+    max-width: 480px;
 }
 
 .operation-table th,
