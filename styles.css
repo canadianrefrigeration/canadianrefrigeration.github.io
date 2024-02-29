@@ -39,12 +39,28 @@ section {
     padding-right: 25px;
 }
 
-.link-remaster:link {
+.link-remaster {
+    position: relative;
     color: #ff0000;
+    text-decoration: none;
 }
 
-.link-remaster:visited {
-    color: #ff0000;
+.link-remaster::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-remaster:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
 
 .link-remaster:focus {
@@ -52,13 +68,14 @@ section {
 }
 
 .link-remaster:hover {
-    background: #ffc5c5;
+    color: #ff0000; 
 }
 
 .link-remaster:active {
     background: #b00000;
     color: #ffc5c5;
 }
+
 
 
 @media (max-width: 960px) {
@@ -103,6 +120,35 @@ section {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.companyNameText {
+    position: relative;
+    padding: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInRight 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.companyNameText::before {
+    content: '\1F341';
+    font-size: 1.5em;
+    transform: translate(-50%, -50%);
+}
+
 .subtitleText {
     position: relative;
     padding: 10px;
@@ -112,29 +158,24 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: rotateAnimation 0.5s linear;
+    -webkit-animation: rotateAnimation 0.5s linear ;
 }
 
-.companyNameText::before {
-    content: '\1F341';
-    font-size: 1.5em;
-    transform: translate(-50%, -50%);
+@keyframes rotateAnimation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 .navigationBar {
     background: linear-gradient(to right, #bbb, #666);
     color: #fff;
     padding: 10px;
-    animation: gradientAnimation 3s linear infinite alternate;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 100%;
-    }
-
-    100% {
-        background-position: 100% 0%;
-    }
 }
 
 .navigationBar ul {
@@ -157,9 +198,27 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    position: relative;
+}
+
+.navigationBar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.navigationBar ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navigationBar ul li a:hover {
-    text-decoration: underline;
-    color: #74baff;
+    color: #ff0000;
 }
