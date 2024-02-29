@@ -111,9 +111,11 @@ section {
     0% {
         color: #ffbbbb;
     }
+
     50% {
         color: #ffffff;
     }
+
     100% {
         color: #ffbbbb;
     }
