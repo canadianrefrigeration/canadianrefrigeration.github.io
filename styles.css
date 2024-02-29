@@ -42,7 +42,7 @@ section {
 
 .link-remaster {
     position: relative;
-    color: #ff0000;
+    color: #ff5353;
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ section {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #ff0000;
+    background-color: #ff5353;
     transform-origin: bottom right;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
@@ -69,7 +69,7 @@ section {
 }
 
 .link-remaster:hover {
-    color: #ff0000;
+    color: #ff5353;
 }
 
 .link-remaster:active {
@@ -100,7 +100,7 @@ section {
 }
 
 .darkModeIcon:hover {
-    color: #ff0000;
+    color: #ff5353;
 }
 
 .darkModeIcon::before {
@@ -135,7 +135,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #000000;
     animation: fadeInRight 0.5s ease-in-out forwards;
     opacity: 0;
 }
@@ -161,9 +161,10 @@ section {
 .subtitleText {
     position: relative;
     padding: 10px;
-    color: #ff0000;
+    color: #ff5353;
+    font-family: Arial, sans-serif;
     font-size: 1em;
-    font-weight: 900;
+    font-weight: 1000;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -218,7 +219,7 @@ section {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff0000;
+    background-color: #ff5353;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease;
@@ -230,7 +231,7 @@ section {
 }
 
 .navigationBar ul li a:hover {
-    color: #ff0000;
+    color: #ff5353;
 }
 
 .operation-table {
