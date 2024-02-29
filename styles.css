@@ -235,7 +235,9 @@ section {
 
 .operation-table {
     border-collapse: collapse;
-    max-width: 480px;
+    max-width: 420px;
+    min-width: 0px;
+    width: 100%;
 }
 
 .operation-table th,
