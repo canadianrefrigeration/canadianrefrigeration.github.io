@@ -107,12 +107,25 @@ section {
     content: '\1F318';
 }
 
+@keyframes waveEffect {
+    0% {
+        color: #ffbbbb;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: #ffbbbb;
+    }
+}
+
 .companyName {
     background: linear-gradient(to right, red 30%, white 33% 66%, red 70%);
     text-align: center;
-    color: #fff;
+    color: #ffbbbb;
     padding: 20px 0;
     font-family: cursive;
+    animation: waveEffect 5s infinite;
 }
 
 .companyNameText {
