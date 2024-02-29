@@ -14,7 +14,8 @@ body {
 
 body.white-mode {
     background-color: #fff;
-    color: #000;
+    color: #272727;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 body.dark-mode {
@@ -68,15 +69,13 @@ section {
 }
 
 .link-remaster:hover {
-    color: #ff0000; 
+    color: #ff0000;
 }
 
 .link-remaster:active {
     background: #b00000;
-    color: #ffc5c5;
+    color: #ffbbbb;
 }
-
-
 
 @media (max-width: 960px) {
     section {
@@ -88,7 +87,7 @@ section {
 .darkModeIcon {
     border: none;
     background-color: transparent;
-    color: #ff0000;
+    color: #ffbbbb;
     display: flex;
     align-items: center;
     padding-top: 5px;
@@ -97,6 +96,11 @@ section {
     -moz-user-select: none !important;
     -webkit-user-select: none !important;
     -ms-user-select: none !important;
+    transition: color 0.5s;
+}
+
+.darkModeIcon:hover {
+    color: #ff0000;
 }
 
 .darkModeIcon::before {
@@ -137,6 +141,7 @@ section {
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -159,7 +164,7 @@ section {
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: rotateAnimation 0.5s linear;
-    -webkit-animation: rotateAnimation 0.5s linear ;
+    -webkit-animation: rotateAnimation 0.5s linear;
 }
 
 @keyframes rotateAnimation {
@@ -199,6 +204,7 @@ section {
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
+    transition: color 0.5s;
 }
 
 .navigationBar ul li a::before {
@@ -221,4 +227,45 @@ section {
 
 .navigationBar ul li a:hover {
     color: #ff0000;
+}
+
+.operation-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.operation-table th,
+.operation-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.operation-table .day {
+    width: 100px;
+}
+
+.operation-table tr:hover {
+    font-weight: bold;
+}
+
+.person {
+    position: relative;
+    padding-left: 2px;
+}
+
+.person::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: transparent;
+    transition: background-color 0.5s, height 0.5s;
+}
+
+.person:hover::before {
+    background-color: red;
+    height: 100%;
 }

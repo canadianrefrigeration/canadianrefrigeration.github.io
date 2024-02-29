@@ -31,31 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_dark_mode.css">
-    <script>
-          // Function to toggle dark mode
-          function toggleMode() {
-            const body = document.querySelector('body');
-            body.classList.toggle('dark-mode');
-            // Saving user's preference in localStorage
-            if (body.classList.contains('dark-mode')) localStorage.setItem('mode', 'dark');
-            else localStorage.setItem('mode', 'white');
-        }
-
-        // Check client browser's dark mode settings and set the page accordingly
-        function checkDarkModePreference() {
-            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-            const savedMode = localStorage.getItem('mode');
-            const body = document.querySelector('body');
-
-            // If client prefers dark mode or if user previously chose dark mode
-            if (prefersDarkScheme.matches || savedMode === 'dark') {
-                body.classList.add('dark-mode');
-            }
-        }
-
-        // Call the function when the document is loaded
-        document.addEventListener('DOMContentLoaded', checkDarkModePreference);
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <body class="white-mode">
@@ -80,7 +56,8 @@
         <h2>About Us</h2>
         <p>Established in August 1979, <strong>Canadian Refrigeration and Air Conditioning Ltd.</strong> is dedicated to
             providing
-            top-notch HVAC services in Metro Vancouver Area, including Vancouver, Burnaby, Richmond, Coquitlam, Langley and Surrey).
+            top-notch HVAC services in Metro Vancouver Area, including Vancouver, Burnaby, Richmond, Coquitlam, Langley
+            and Surrey).
         </p>
         <p><strong>Customers</strong></p>
         <ul>
@@ -124,13 +101,49 @@
     </section>
     <section id="hours">
         <h2>Operation Schedule</h2>
+        <table class="operation-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td>8:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td>8:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>8:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td>8:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td>8:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td>8:00am - 1:00pm <em>(for account customers)</em></td>
+                </tr>
+                <tr>
+                    <td class="day">Sunday</td>
+                    <td>8:00am - 1:00pm <em>(for account customers)</em></td>
+                </tr>
+            </tbody>
+        </table>
         <ul>
-            <li>Monday to Friday 8:00am to 6:00pm</li>
-            <li>Saturday and Sunday 8:00am to 1:00pm for account customers</li>
             <li>Response time: one to three hours</li>
             <li>Emergency response service available</li>
-            <li>Note: if call is started during normal time, no overtime is charged till job completed. This is only for
-                regular account clients</li>
+            <li>Note: If a call is initiated during normal hours, no overtime is charged until the job is completed.
+                This is only for regular account clients.</li>
         </ul>
     </section>
     <section id="warranty">
@@ -149,16 +162,22 @@
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
+        <p><strong>Contact Person</strong></p>
         <div>
-            <p><strong>Contact Person</strong></p>
-            <p>Naren Jubbal<br>Owner<br>Canadian
+            <p class="person"><a class="link-remaster"
+                    href="mailto:canadianrefrigeration@telus.net?body=Hi%20Naren%2C%0A%0A">Naren
+                    Jubbal</a><br>Owner<br>Canadian
                 Refrigeration & Air Conditioning Ltd.<br>Unit A3 - 5279 Still Creek Avenue, Burnaby B.C., Canada, V5C
                 5V1<br>+1 (604) 291-2720 | <a class="link-remaster"
-                    href="mailto:canadianrefrigeration@telus.net">canadianrefrigeration@telus.net</a></p>
-            <p>Jason Yeung<br>Office Administrator, System Architect and Technical Support Specialist<br>Canadian
+                    href="mailto:canadianrefrigeration@telus.net?body=Hi%20Naren%2C%0A%0A">canadianrefrigeration@telus.net</a>
+            </p>
+            <p class="person"><a class="link-remaster"
+                    href="mailto:canadianrefrigeration@telus.net?body=Hi%20Jason%2C%0A%0A">Jason Yeung</a><br>Office
+                Administrator, System Architect and Technical Support Specialist<br>Canadian
                 Refrigeration & Air Conditioning Ltd.<br>Unit A3 - 5279 Still Creek Avenue, Burnaby B.C., Canada, V5C
                 5V1<br>+1 (604) 291-2720 | <a class="link-remaster"
-                    href="mailto:canadianrefrigeration@telus.net">canadianrefrigeration@telus.net</a></p>
+                    href="mailto:canadianrefrigeration@telus.net?body=Hi%20Jason%2C%0A%0A">canadianrefrigeration@telus.net</a>
+            </p>
         </div>
         <div>
             <p><strong>Contact Methods</strong></p>
