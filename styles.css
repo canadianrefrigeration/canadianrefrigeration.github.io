@@ -163,7 +163,7 @@ section {
 .subtitleText {
     position: relative;
     padding: 10px;
-    color: #ff5353;
+    color: #ff4545;
     font-family: Arial, sans-serif;
     font-size: 1em;
     font-weight: 1000;
@@ -256,25 +256,4 @@ section {
 
 .operation-table tr:hover {
     font-weight: bold;
-}
-
-.person {
-    position: relative;
-    padding-left: 2px;
-}
-
-.person::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 2px;
-    background-color: transparent;
-    transition: background-color 0.5s, height 0.5s;
-}
-
-.person:hover::before {
-    background-color: red;
-    height: 100%;
 }
