@@ -1,4 +1,3 @@
-
 # canadianrefrigeration.github.io
 
 # Canadian Refrigeration & Air Conditioning Ltd
@@ -38,7 +37,7 @@ Customers can submit service requests via email using the provided mailto link o
 
 ## Disclaimer
 
-A disclaimer at the footer of the website informs visitors that the information provided on the website, including prices, hours, and services, may be subject to change. Visitors are advised to contact the company directly for the most current information. The copyright notice for the website content is also included.
+Disclaimer: Prices, hours, services, and other information provided on this website are subject to change without notice. While we strive to keep the information accurate and up to date, discrepancies may occur. Please contact us directly for the most current information. Additionally, please note that pricing, hours, and services may vary depending on specific requests and locations.
 
 For more information, please contact Canadian Refrigeration & Air Conditioning Ltd directly through the provided contact details.
 
