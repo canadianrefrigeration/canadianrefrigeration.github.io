@@ -13,3 +13,16 @@ function checkDarkModePreference() {
 }
 
 document.addEventListener('DOMContentLoaded', checkDarkModePreference);
+
+window.onscroll = function () { scrollCheck() };
+
+function scrollCheck() {
+    let scrollToTopButton = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) scrollToTopButton.classList.remove("hidden");
+    else scrollToTopButton.classList.add("hidden");
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
