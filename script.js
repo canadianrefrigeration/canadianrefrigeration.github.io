@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', checkDarkModePreference);
 window.onscroll = function () { scrollCheck() };
 
 function scrollCheck() {
-    let scrollToTopButton = document.getElementById("scrollToTopBtn");
-    if (document.body.scrollTop > document.getElementById('companyHeader').offsetHeight || document.documentElement.scrollTop > document.getElementById('companyHeader').offsetHeight) scrollToTopButton.classList.remove("hidden");
-    else scrollToTopButton.classList.add("hidden");
-
     let navLeftBar = document.getElementById("navLeftBar");
     if (document.body.scrollTop > document.getElementById('companyHeader').offsetHeight || document.documentElement.scrollTop > document.getElementById('companyHeader').offsetHeight) navLeftBar.classList.remove("hidden");
     else navLeftBar.classList.add("hidden");
