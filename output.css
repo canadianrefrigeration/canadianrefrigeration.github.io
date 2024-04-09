@@ -570,6 +570,54 @@ video {
   right: 0.75rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.bottom-9 {
+  bottom: 2.25rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.bottom-48 {
+  bottom: 12rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -584,6 +632,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .line-clamp-5 {
@@ -601,6 +653,10 @@ video {
   display: table;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -611,6 +667,10 @@ video {
 
 .caption-bottom {
   caption-side: bottom;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .list-inside {
@@ -625,8 +685,36 @@ video {
   list-style-type: disc;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500\/\[0\.5\] {
+  background-color: rgb(107 114 128 / 0.5);
 }
 
 .px-1 {
@@ -642,6 +730,11 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pl-0 {
@@ -660,6 +753,10 @@ video {
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -674,12 +771,21 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {
@@ -698,6 +804,11 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -757,9 +868,52 @@ video {
   content: var(--tw-content);
 }
 
+.before\:content-\[\]::before {
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\\1F318\'\]::before {
+  --tw-content: '\1F318';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\\U\+2912\'\]::before {
+  --tw-content: '\U+2912';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\\\+2912\'\]::before {
+  --tw-content: '\+2912';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\\2912\'\]::before {
+  --tw-content: '\2912';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\\002912\'\]::before {
+  --tw-content: '\002912';
+  content: var(--tw-content);
+}
+
+.hover\:border-none:hover {
+  border-style: none;
+}
+
 .hover\:text-base:hover {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.hover\:text-red-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:before\:h-full:hover::before {

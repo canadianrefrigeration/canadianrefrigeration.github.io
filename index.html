@@ -36,26 +36,39 @@
 </head>
 
 <body class="white-mode">
-    <header class="companyName">
-        <span class="unselectable companyNameText">Canadian Refrigeration & Air Conditioning Ltd</span>
-        <div class="unselectable subtitleText">Service B.C. Since 1979</div>
-    </header>
-    <div class="unselectable navigationBar">
+    <div id="companyHeader">
+        <header class="companyName">
+            <span class="unselectable companyNameText">Canadian Refrigeration & Air Conditioning Ltd</span>
+            <div class="unselectable subtitleText">Service B.C. Since 1979</div>
+        </header>
+        <div class="unselectable navigationBar">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">What We Do</a></li>
+                <li><a href="#rates">Rates</a></li>
+                <li><a href="#hours">Operation Schedule</a></li>
+                <li><a href="#warranty">Warranty</a></li>
+                <li><a href="#note">Important Note</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#request">Service Request</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="navLeftBar"
+        class="fixed z-99 bottom-0 right-0 mb-3 mr-3 bg-gray-500/[0.5] text-red-500 px-1 py-1 font-extrabold font-sans text-right text-xs">
         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">What We Do</a></li>
-            <li><a href="#rates">Rates</a></li>
-            <li><a href="#hours">Operation Schedule</a></li>
-            <li><a href="#warranty">Warranty</a></li>
-            <li><a href="#note">Important Note</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#request">Service Request</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#about">About Us</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#services">What We Do</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#rates">Rates</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#hours">Operation Schedule</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#warranty">Warranty</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#note">Important Note</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#contact">Contact Us</a></li>
+            <li><a class="hover:underline hover:text-red-500" href="#request">Service Request</a></li>
+            <li><button class="hover:underline before:content-['\002912']" onclick="scrollToTop()" id="scrollToTopBtn">Go to Top</button></li>
+            <li><button class="hover:underline before:content-['\1F318']" onclick="toggleMode()" id="toggleBtn">Dark Mode</button></li>
         </ul>
     </div>
-    <button
-        class="fixed bottom-3 z-99 right-3 text-red-500 px-1 py-0.5 font-extrabold font-sans text-sm hover:text-base"
-        onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">TOP</button>
-    <button class="darkModeIcon" id="toggle-btn" onclick="toggleMode()">Dark Mode</button>
     <section id="about">
         <p class="text-2xl font-bold mt-6 mb-3">About Us</p>
         <p class="line-clamp-5"><strong class="text-red-500 tracking-wide font-sans antialiased">Canadian Refrigeration
@@ -242,7 +255,6 @@
             width="99%" height="2250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 </body>
-
 <footer class="unselectable">
     <p>Disclaimer: Prices, hours, services, and other information provided on this website are subject to change without
         notice. While we strive to keep the information accurate and up to date, discrepancies may occur. Please contact
