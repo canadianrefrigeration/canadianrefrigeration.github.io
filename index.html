@@ -54,22 +54,39 @@
             </ul>
         </div>
     </div>
-    <div id="navLeftBar"
-        class="hidden fixed z-99 bottom-0 right-0 mb-3 mr-3 bg-gray-500/[0.5] text-red-500 px-1 py-1 font-extrabold font-sans text-right text-xs">
-        <ul>
-            <li><a class="hover:underline hover:text-red-500" href="#about">About Us</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#services">What We Do</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#rates">Rates</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#hours">Operation Schedule</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#warranty">Warranty</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#note">Important Note</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#contact">Contact Us</a></li>
-            <li><a class="hover:underline hover:text-red-500" href="#request">Service Request</a></li>
-            <li><button class="hover:underline before:content-['\002912']" onclick="scrollToTop()"
-                    id="scrollToTopBtn">Go to Top</button></li>
-            <li><button class="hover:underline before:content-['\1F318']" onclick="toggleMode()" id="toggleBtn">Dark
-                    Mode</button></li>
-        </ul>
+    <div id="navLeftBar1"
+        class="hidden fixed z-99 bottom-10 right-3 px-1 py-1 text-wrap text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans">
+        <a class="hover:underline hover:text-red-500" href="#about">
+            <div>About Us</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#services">
+            <div>What We Do</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#rates">
+            <div>Rates</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#hours">
+            <div>Operation Schedule</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#warranty">
+            <div>Warranty</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#note">
+            <div>Important Note</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#contact">
+            <div>Contact Us</div>
+        </a>
+        <a class="hover:underline hover:text-red-500" href="#request">
+            <div>Service Request</div>
+        </a>
+        <button class="hover:underline before:content-['\002912']" onclick="scrollToTop()" id="scrollToTopBtn">
+            Go to Top
+        </button>
+    </div>
+    <div onclick="toggleMode()" id="toggleBtn"
+        class="fixed z-99 bottom-3 right-3 px-1 py-1 cursor-pointer text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans hover:underline">
+        Dark Mode
     </div>
     <section id="about">
         <p class="text-2xl font-bold mt-6 mb-3">About Us</p>
@@ -142,6 +159,7 @@
                 <span class="font-bold">New customers</span>
                 <div><strong>A C.O.D. form is required to be filled before technician is dispatched to
                         your location.</strong></div>
+                <div>C.O.D. customers are required to pay the full amount upon completion.</div>
             </li>
         </ul>
     </section>
@@ -216,7 +234,6 @@
         <ul>
             <li>Please note any unforeseen deficiencies identified after foresaid services completed, a quote will be
                 provided and billed separately.</li>
-            <li>C.O.D. customers are required to pay the full amount upon completion.</li>
             <li>A quote will be provided for parts and labor before proceeding with the replacement of any major
                 component, such as the compressor.</li>
         </ul>
@@ -247,7 +264,7 @@
             </div>
         </div>
         <div>
-            <p class="mt-2"><strong>Contact Methods</strong></p>
+            <p class="mt-2"><strong>Office Contact Methods</strong></p>
             <ul class="mb-2">
                 <li>Office Phone: <a class="link-remaster" href="tel:+16042912720">+1 (604) 291-2720</a></li>
                 <li>Email: <a class="link-remaster"
