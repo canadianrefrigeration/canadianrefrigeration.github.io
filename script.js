@@ -44,7 +44,7 @@ function scrollToTop() {
 function navSideBarVisibility() {
     let navLeftBar = document.getElementById("navLeftBar");
     let toggleBtn = document.getElementById("toggleBtn");
-    if (document.documentElement.clientWidth > 470) {
+    if (document.documentElement.clientWidth > 480) {
         navLeftBar.classList.remove("hidden");
         toggleBtn.classList.add("fixed");
     }
