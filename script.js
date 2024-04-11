@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', checkDarkModePreference);
 window.onscroll = function () { scrollCheck() };
 
 function scrollCheck() {
-    let navLeftBar = document.getElementById("navLeftBar1");
+    let navLeftBar = document.getElementById("navLeftBar");
     if (document.body.scrollTop > document.getElementById('companyHeader').offsetHeight || document.documentElement.scrollTop > document.getElementById('companyHeader').offsetHeight) navLeftBar.classList.remove("hidden");
     else navLeftBar.classList.add("hidden");
 }

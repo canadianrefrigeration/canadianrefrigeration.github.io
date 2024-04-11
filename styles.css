@@ -33,6 +33,14 @@ body.dark-mode {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    #navLeftBar {
+        visibility: hidden;
+    }
+
+    #toggleBtn {
+        position: initial;
+    }
 }
 
 section {

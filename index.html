@@ -35,6 +35,21 @@
     <script src="script.js"></script>
 </head>
 
+<div id="navLeftBar"
+    class="hidden fixed bottom-10 right-3 px-1 py-1 text-wrap text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans">
+    <div>About Us<a class="hover:underline hover:text-red-500" href="#about">&#x2192;</a></div>
+    <div>What We Do<a class="hover:underline hover:text-red-500" href="#services">&#x2192;</a></div>
+    <div>Rates<a class="hover:underline hover:text-red-500" href="#rates">&#x2192;</a></div>
+    <div>Operation Schedule<a class="hover:underline hover:text-red-500" href="#hours">&#x2192;</a></div>
+    <div>Warranty<a class="hover:underline hover:text-red-500" href="#warranty">&#x2192;</a></div>
+    <div>Important Note<a class="hover:underline hover:text-red-500" href="#note">&#x2192;</a></div>
+    <div>Contact Us<a class="hover:underline hover:text-red-500" href="#contact">&#x2192;</a></div>
+    <div>Service Request<a class="hover:underline hover:text-red-500" href="#request">&#x2192;</a></div>
+    <button class="hover:underline after:content-['\002912']" onclick="scrollToTop()" id="scrollToTopBtn">
+        Go to Top
+    </button>
+</div>
+
 <body class="white-mode">
     <div id="companyHeader">
         <header class="companyName">
@@ -54,38 +69,8 @@
             </ul>
         </div>
     </div>
-    <div id="navLeftBar1"
-        class="hidden fixed z-99 bottom-10 right-3 px-1 py-1 text-wrap text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans">
-        <a class="hover:underline hover:text-red-500" href="#about">
-            <div>About Us</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#services">
-            <div>What We Do</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#rates">
-            <div>Rates</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#hours">
-            <div>Operation Schedule</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#warranty">
-            <div>Warranty</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#note">
-            <div>Important Note</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#contact">
-            <div>Contact Us</div>
-        </a>
-        <a class="hover:underline hover:text-red-500" href="#request">
-            <div>Service Request</div>
-        </a>
-        <button class="hover:underline before:content-['\002912']" onclick="scrollToTop()" id="scrollToTopBtn">
-            Go to Top
-        </button>
-    </div>
     <div onclick="toggleMode()" id="toggleBtn"
-        class="fixed z-99 bottom-3 right-3 px-1 py-1 cursor-pointer text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans hover:underline">
+        class="fixed bottom-3 right-3 px-1 py-1 cursor-pointer text-right text-xs bg-gray-500/[0.5] text-red-500 font-extrabold font-sans hover:underline">
         Dark Mode
     </div>
     <section id="about">
@@ -212,7 +197,7 @@
                 </table>
             </div>
             <div class="flex-auto relative">
-                <ul class="flex-auto relative">
+                <ul>
                     <li>Same-day service is available if the call is placed early in the day.</li>
                     <li>Response time is one to three hours depending on traffic.</li>
                     <li>Emergency response service is available with premium charges.</li>
