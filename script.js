@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', checkDarkModePreference);
 window.addEventListener("resize", navSideBarVisibility);
 
+setTimeout(() => {
+    document.location.reload();
+  }, 3600000);
+
 function toggleMode() {
     const body = document.querySelector('body');
     body.classList.toggle('dark-mode');

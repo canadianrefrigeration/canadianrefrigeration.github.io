@@ -250,10 +250,8 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
-.operation-table .day {
-    width: 100px;
-}
-
 .operation-table tr:hover {
-    font-weight: bold;
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
