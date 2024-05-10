@@ -11,7 +11,7 @@ function toggleMode() {
     let toggleBtn = document.getElementById("toggleBtn");
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('mode', 'dark');
-        toggleBtn.textContent = "White Mode";
+        toggleBtn.textContent = "Light Mode";
     }
     else {
         localStorage.setItem('mode', 'white');
@@ -26,7 +26,7 @@ function checkDarkModePreference() {
     if (prefersDarkScheme.matches || savedMode === 'dark') {
         body.classList.add('dark-mode');
         let toggleBtn = document.getElementById("toggleBtn");
-        toggleBtn.textContent = "White Mode";
+        toggleBtn.textContent = "Light Mode";
     }
 }
 
