@@ -37,6 +37,13 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 960px) {
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 section {
     padding-left: 25px;
     padding-right: 25px;
@@ -77,13 +84,6 @@ section {
 .link-remaster:active {
     background: #b00000;
     color: #ffbbbb;
-}
-
-@media (max-width: 960px) {
-    section {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .darkModeIcon {
